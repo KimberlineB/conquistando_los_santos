@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face{
+    font-family: 'plane_crash';
+    src: url('../Font/plane_crash/Plane\ Crash.ttf');
+    src: url('../Font/plane_crash/Plane\ Crash.ttf?iefix')format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* {
+    :root{
+        --yelllow #fff--s
+        
+    }
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+}
+/* Inicio Header */
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    z-index: 10000;
+    padding: 0 50px;
+}
+.opcionesdemenu{
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+.opcionesdemenu ul{
+    list-style: none;
+    display: flex;
+}
+.opcionesdemenu ul li{
+    margin-left: 15px;
+}
+.opcionesdemenu ul li a {
+    font-size: 20px;
+    color: white;
+}
+.opcionesdemenu ul li .btn-inscripcion{
+    color: #C19E23;
+}
+.opcionesdemenu ul li .btn-paquete{
+    color: #C19E23;
+}
+.home{
+    display: flex;
+    align-items: center;
+    background: url('../IMG/Headers/Fondo_Header_Web.jpg') no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    justify-content: center;
+}
+.home h1{
+    margin-bottom: 4rem;    
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    font-family: 'plane_crash';
+    font-weight: normal;
+}
+.home p{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: medium;
+}
+.container{
+    max-width: 192rem;
+    width: 100vw;
+    text-align: center;
+} 
+.home .btn-box {
+    background-color: transparent;
+    color: #C19E23;
+    display: inline-flex;
+    font-size: 4rem;
+    padding: 7px 12px;
+    border-style: solid;
+    border-width: 3.07px;
+    border-radius: 23px;
+    margin-top: 8rem;
+}
+.home .btn-box:hover{
+    background-color: #C19E23;
+    transition: all 1s ease;
+}
+.home .btn-box a{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+/* Final Header */
+.patrosinadores{
+    display: flex;
+    background: url('..//IMG/Patrosinadores/Patrocinadores_Web.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 108rem;
+}
+/* Inicion Seccion Sobre Nosotros */
+.seccionSN{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 1080px;
+    background: black;
+}
+.barra{
+    width: 100%;
+    padding: 51px 0 25px 0;
+    background: #121111;
+    border-bottom: 1px solid #BEBCBC;
+}
+.h2SN{
+    text-align: center;
+    font-family: 'plane_crash';
+    font-weight: normal;
+    color: white;
+    font-size: 100px;
+}
+.contenedor_SN{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor{
+    height: 456px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 92px;
+}
+.contenido{
+    border-left: 6px solid #C19E23;
+    margin-left: 240px;
+}
+.pSN{
+    margin-left: 11px;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: Medium;
+}
+/* Finas Seccion Sobre Nosostros */
+/* Inicio Asistencias */
+.seccionA{
+    display: flex;
+    background: url('../IMG/Asistencia/Fondo_Asistencia_Web.jpg') no-repeat;
+    width: 100vw;
+    height: 1080px;
+    padding: 184px 207px 453px 361px;
+}
+.articuloA{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor1{
+    display: flex;
+    width: 72.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.3rem;
+}
+.h2A{
+    color: black;
+    text-align: center;
+    font-family: 'plane_crash';
+    font-weight: normal;    
+    font-size: 100px;
+}
+.parrafos{
+    display: flex;
+    width: 59,1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+.pA{
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: Medium;
+}
+/* Final Seccion Asistencia */
+/* Inicio Seccion  Categorias */
+.seccionC{
+    width: 100vw;
+    height: 1080px;
+    position: relative;
+    display: flex;
+    background-color: #FEFBF4;
+    padding: 8rem 11.9rem 8.165rem 11.9rem;
+}
+.articuloC{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    width: 168.2rem;
+    height: 91.635rem;
+    background: black;
+    background-position: center;
+    padding-top: 10rem;
+    box-shadow:  1.2rem 1.2rem 1.5rem rgba(0,0,0,.3);
+}
+.h2C{
+    font-family: 'plane_crash';
+    font-weight: normal;
+    font-size: 10rem;
+    color: white;
+    text-align: center;
+}
+.infoC{
+    margin: 17rem;
+}
+.textos1C{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14rem;
+    align-self: stretch;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+}
+.textos2C{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14rem;
+    margin-top: 11.5rem;
+    text-align: center;
+}
+.textosDecoradosC{
+    color: #C19E23;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    font-weight: bold;
+}
+.parrafosC{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    font-weight: Medium;
+}
+/* Final Seccion Categorias */
+/* Inicio Seccion Incripcion */
+.seccionIns{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: url('../IMG/Inscripción/Fondo_Inscripcion_Web.jpg') no-repeat;
+}
+.containerI{
+    display: flex;
+    justify-content: space-between;   
+    text-align: center;
+}
+.article-left{
+    width: 1073px;
+    height: 100vh;
+    border-radius: 0 17.2rem 17.2rem 0;
+    background: white;
+    box-shadow: 1.2rem -1.2rem 3.5rem rgba(193,158,35,.5);
+}
+.h2-I{
+    padding-top: 10rem;
+    font-family: 'plane_crash';
+    font-weight: normal;
+    font-size: 10rem;
+    color: black;
+    text-align: center;
+}
+.formulario{
+    margin: 18.62px;
+    flex-direction: column;
+    padding: 0  28.1rem 0 30rem;
+}
+.form-imputs{
+    display: grid;
+    gap: 1.5rem;
+    color: #6b6b6b;
+    margin-top: 10rem;
+}
+.form-label{
+    width: 46.9rem;
+    height: 7.9rem;
+    display: grid;
+    grid-template-areas: "input";
+    margin-top: 2.5rem;
+}
+.opcionerForm{
+    border-radius: 3.2rem;
+    grid-area: input;
+    width: 100%;
+    border: 0.2rem solid black;
+}
+.formText{
+    display: flex;
+    font-size: 1.862rem;
+    font-family: 'Montserrat';
+    grid-area: input;
+    height: 5.883rem;
+    width: 35rem;
+    margin-left: 3.06rem;
+    align-items: center;
+    transition: transform .3s;
+    color: #C19E23;
+}
+
+
+
+.opcionerForm:focus + .formText, 
+.opcionerForm:not(:placeholder-shown) + .formText{
+    background-color: white;
+    transform: translateY(-50%) scale(.7);
+    border-color: #C19E23;
+} 
+
+
+
+
+.opcionerForm:hover{
+    border-color: #C19E23;
+}
+.formulario .btn-enviar{
+    width: 50%;
+    padding: 1.2rem;
+    background: transparent;
+    border: 0.223rem solid #C19E23;
+    border-radius: 19.25px;
+    color: white;
+    color: black;
+    font-size: 1.925rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    cursor: pointer;
+}
+.formulario .btn-enviar:hover{
+    background: #C19E23;
+}
+/* Inicio JS btn enviar*/
+.efectobar{
+    background: white;
+}
+.efectook{
+    background: #C19E23;
+}
+.titleJ{
+    font-family: 'plane_crash';
+    font-weight: normal;
+}
+.textJ{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* Final JS btn enviar*/
+
+.article-right{
+    padding: 37.5rem 23.4rem 0 0;
+}
+.infoI{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+}
+/* Final Seccion Incripcion */
+/* Inicio Seccion Uniformes */
+.seccionU{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 12rem 24rem 12rem 24rem;
+    width: 100vw;
+    height: 212.9rem;
+}
+.gradient{
+    width: 100%;
+    height: 3rem;
+    background: linear-gradient(90deg, #C19E23 0%, #000 100%);
+    margin-top: 10rem;
+}
+.h2U{
+    padding-bottom: 12rem;
+    color: black;
+    text-align: center;
+    font-family: 'plane_crash';
+    font-weight: normal;
+    font-size: 10rem;
+    font-style: normal;
+}
+.containerU{
+    display: flex;
+    width: 144rem;
+    gap: 13.5rem;
+    justify-content: center;
+    flex-direction: column;
+}
+.h3U{
+    color: black;
+    text-align: center;
+    font-family: 'plane_crash';
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.imagenesU{
+    display: flex;
+    justify-content: center;
+    gap: 25.8rem;
+}
+/* Final Seccion Uniformes */
+/* Inicio Seccion Rutas */
+.seccionR{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 8.2rem 24rem 8.188,7rem 24rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.InfoTituloR{
+    display: flex;
+    width: 95.4rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+}
+.tituloR{
+    color: black;
+    text-align: center;
+    font-family: 'plane_crash';
+    font-weight: normal;    
+    font-size: 10rem;
+    border-bottom: 0.6rem solid #C19E23;
+}
+.parrafoTituloR{
+    align-self: stretch;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: Medium;
+}
+.contenedorR{
+    display: flex;
+    width: 144rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 15rem;
+}
+.articulo1R{
+    display: flex;
+    align-items: flex-end;
+    gap: 1.3rem;
+    align-self: stretch;
+}
+.AleftR{
+    display: flex;
+    width: 59.393rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+}
+.h3R{
+    font-family: 'plane_crash';
+    font-weight: normal;
+    font-size: 7rem;
+}
+.listaR{
+    list-style: none;
+    font-family: 'Montserrat';
+    font-weight: Medium;
+    font-size: 2.5rem;
+}
+.pR{
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: Medium;
+    text-decoration-line: underline;
+    color: black;
+}
+.rightR1{
+    display: flex;
+    width: 83.3rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 9.5rem;
+}
+.articulo2R{
+    display: flex;
+    align-items: flex-end;
+    gap: 1.8rem;
+    align-self: stretch;
+}
+.rightR2{
+    display: flex;
+    width: 95.5rem;
+    height: 95.4rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 22.7rem;
+}
+.articulo3R{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.8rem;
+    align-self: stretch;
+}
+.rightR3{
+    display: flex;
+    width: 83.3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9.5rem;
+}
+/* Final Seccion Rutas */
+/* Inicio Seccion Premios */
+.seccionP{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 176.2rem;
+    background: url('../IMG/Premios/Fondo_Premios_Web.jpg');
+    padding: 17.2rem 24.1rem 22.7rem 24rem;
+}
+.articuloP{
+    display: flex;
+    width: 143.9rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 15rem;
+} 
+.h2P{
+    font-family: 'plane_crash';
+    font-weight: normal;
+    font-size: 10rem;
+    text-align: center;
+    color: white;
+}
+.contenedorP{
+    display: flex;
+    width: 119.8rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 8.7rem 25.8rem;
+    flex-wrap: wrap;
+}
+.cardP{
+    width: 47rem;
+    height: 30.8rem;
+    background: black;
+    border-radius: 2rem 0;
+    align-content: center;
+    transition: 1s;
+    position: relative;
+}
+.pP{
+    flex-wrap: wrap;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+.text-hover{
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+}
+.cardP:hover{
+    border: 0.3rem solid #C19E23;
+}
+.cardP:hover .text-hover{
+    visibility: visible;
+    opacity: 1;
+}
+.cardP:hover .pP{
+    visibility: hidden;
+}
+.premio-color{
+    color: #C19E23;
+}
+/* Final Seccion Premios */
+/* Inicio Sección Paquete */
+.seccionPQ{
+    display: flex;
+    flex-wrap: wrap;
+    width: 192rem;
+    height: 108rem;
+    background: url('../IMG/Paquete/Web/Fondo_Paquete_Web.jpg') no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+}
+.h2PQ{
+    font-family: 'plane_crash';
+    font-size: 10rem;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+.articuloPQ{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+}
+.card1_PQ{
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.pPQ{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: Medium;
+    font-size: 2.5rem;
+    align-self: stretch;
+    text-align: center;
+}
+.card2_PQ{
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.card3_PQ{
+    display: flex;
+    width: 31.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.card4_PQ{
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.card5_PQ{
+    display: flex;
+    width: 22.4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.h4PQ{
+    color: white;
+    font-family: 'plane_crash';
+    font-size: 15rem;
+    font-weight: normal;
+    text-align: center;
+    top: 2.4rem;
+}
+/* Final Sección Paquete */
+/* Inicio Seccion Eventos */
+.seccionE{
+    display: flex;
+    text-align: center;
+    background: url('../IMG/Eventos/Eventos_Web.jpg');
+    padding: 193px 237px 193px 240px;
+    width: 100vw;
+    height: 178,2rem;
+}
+.articuloE{
+    display: flex;
+    width: 144.3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17rem;
+}
+.h2E{
+    text-align: center;
+    align-items: center;
+    font-family: 'plane_crash';
+    font-size: 10rem;
+    font-weight: normal;
+    color: white;
+}
+.contenidoE{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    align-self: stretch;
+}
+.h3E{
+    align-items: center;
+    font-family: "plane_crash";
+    font-size: 7rem;
+    font-weight: normal;
+    color: white;
+}
+.pE{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: Medium;
+    color: white;
+}
+/* Final Seccion Eventos */
+/* Inicio Seccion Turismo */
+.seccionT{
+    display: flex;
+    width: 100vw;
+    padding: 11.1rem 24rem 11.5rem 24rem;
+    flex-direction: column;
+    align-items: center;
+}
+.contenidoT{
+    display: flex;
+    width: 144rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 19.9rem;
+}
+.h2T{
+    bottom: 20.3rem;
+    text-align: center;
+    font-family: 'plane_crash';
+    font-size: 10rem;
+    font-weight: normal;
+    color: black;
+}
+.articuloT{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 140px;
+    align-self: stretch;
+}
+.contenidoT_1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6rem;
+    align-self: stretch;
+}
+.h3T{
+    font-family: 'plane_crash';
+    font-size: 7rem;
+    font-weight: normal;
+    color: black;
+}
+.pT{
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-style: Medium;
+    color: black;
+}
+.contenidoT_2{
+    display: flex;
+    width: 117,9rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6rem;
+}
+.contenidoT_3{
+    display: flex;
+    width: 117.1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6rem;
+}
+/* Final Seccion Turismo */
+/* Inicio Seccion Footer */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 64.3rem;
+    width: 100vw;
+    display: inline-flex;
+    padding: 17.5rem 36.1rem 19.2rem 36.1rem;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+.articuloF{
+    display: flex;
+    align-items: center;
+    gap: 22.33rem;
+}
+.infoP_1{
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: Medium;
+    color: white;
+}
+.listaF{
+    list-style: none;
+    cursor: pointer;
+}
+.unicasF{
+    color: #C19E23;
+}
+.infoP_2{
+    text-align: center;
+    display: flex;
+    width: 54.1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.8rem;
+}
+.pF{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: Medium;
+}
+.infoP_3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3rem;
+}
+.opcion-footer{
+    text-decoration: none;
+    color: white;
+}
+.facebook{
+    font-size: 5.2rem;
+}
+.instagram{
+    font-size: 5.2rem;
+    align-self: stretch;
+}
+.twitter{
+    color: white;
+    flex-shrink: 0;
+    font-size: 5.2rem;
+}
+/* Final Seccion Footer */
+
+/*@media screen and (max-width: 992px){
+    .home{
+        background: url('../IMG/Headers/Fondo_Header_Tablet.jpg') no-repeat;
+    }
+    .home h1{
+        font-size: 7.7rem;
+    }
+    .home p{
+        font-size: 2.1rem;
+    }
+    .btn-box a{
+        font-size: 2.5rem;        
+    }*/
+    
+    /* Inicio Secion Patrocinadores */
+   /* .patrosinadores{
+        background: url('../IMG/Patrosinadores/Patrocinadores_Tablet.jpg') no-repeat;
+        width: 99rem;
+        height: 55.8rem;
+    }*/
+    /* Final Seccion Patrosinadores */
+    /* Inicio Seccion Sobre Nosotros */
+    /*.seccionSN{
+        background: url('../IMG/Sobre_Nosotros/Fondo_Sobre_Nosotros_Tablete.jpg') no-repeat;
+    }
+    .h2SN{
+        font-size: 6.5rem;
+    }*/
+    /* Final Seccion Spobre Nosotrops */
+/*}*/
